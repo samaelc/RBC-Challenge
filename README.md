@@ -4,7 +4,7 @@ Using parameter file to select the file to be used
 POST - http://localhost:8080/weekly-stock/upload
 
 ## Query Stock by stock ticker
-http://localhost:8080/weekly-stock/find/{stockTciker}
+http://localhost:8080/weekly-stock/find/{stockTicker}
 
 ## Add a new record
 http://localhost:8080/weekly-stock/add
@@ -30,6 +30,15 @@ http://localhost:8080/weekly-stock/add
 	"percentageReturnNextDividend": 0.174927
 }
 ```
+
+# Configuration
+## JVM
+Java11
+## DB
+H2
++ URL = jdbc:h2:mem:testdb
++ User = sa
++ Password = password
 
 # Design
 A three layers application was developed for the requirements listed. 
